@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = "eskf_localization" type = "eskf_localization"  name = "eskf_localization" output = "screen" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find eskf_localization)/rviz/eskf_imu_gps.rviz" required="true"/>
+</launch>
